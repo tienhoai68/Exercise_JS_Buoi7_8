@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>bài tập js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- font gg -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+        <div class="container mt-5 content__item">
+            <div class="tab-content">
+              <div class="tab-pane container active">
+                  <div class="content">
+                      <div class="row">
+                          <div class="col-12">
+                              <div class="card">
+                                  <div class="card-header text-center">
+                                      <h3> <span><i class="fa-solid fa-school"></i></span> Exercise JS</h3>
+                                  </div>
+                                  <div class="card-body card-item">
+                                      <div class="form-group">
+                                        <label for=""><i class="fa-solid fa-star"></i></span> Nhập vào số nguyên</label>  
+                                      <div class="row">
+                                          <div class="col-12 col-lg-4">
+                                              <input type="number" class="w-100 form-control mb-3 content_number" name="" id="soNguyen" placeholder="Nhập vào số nguyên">
+                                          </div> 
+                                      </div>
+                                      <button onclick="btnThemSo()" class="btn btn-success"> Thêm số</button>
+                                  </div>
+                                  <div class="card-footer text-muted">
+                                      <i class="fa-solid fa-hand-holding-heart"></i> <span id="soDaNhap"></span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#bai1">Bài 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai2">Bài 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai3">Bài 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai4">Bài 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai5">Bài 5</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai6">Bài 6</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai7">Bài 7</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai8">Bài 8</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai9">Bài 9</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#bai10">Bài 10</a>
+            </li>
+          </ul>
+          
+          <!-- Tab panes -->
+          <!-- tính điểm sinh viên -->
+          <div class="tab-content">
+            <div class="tab-pane container active" id="bai1">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></span> Tổng số dương</h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Tổng số dương </label>
+                                      <div class="row">                                     
+                                      </div>                    
+                                    </div>
+                                    <button onclick="btnTinhTong()" class="btn btn-success">Tính tổng</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span id="ketQuaTinhTong"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tính tiền điện -->
+            <div class="tab-pane container fade" id="bai2">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> Đếm số dương</h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Đếm số dương </label>
+                                      <div class="row">                                     
+                                      </div>                    
+                                    </div>
+                                    <button onclick="demSoDuong()" class="btn btn-success">Đếm số</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="demSoDuong"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tính thuế -->
+            <div class="tab-pane container fade" id="bai3">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> Tìm số nhỏ nhất </h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Tìm số nhỏ nhất </label>
+                                      <div class="row">                                     
+                                      </div>                    
+                                    </div>
+                                    <button onclick="ketQuaSNN()" class="btn btn-success">Tìm số nhỏ nhất</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="soNhoNhat"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="bai4">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> Tìm số dương nhỏ nhất</h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Tìm số dương nhỏ nhất </label>
+                                      <div class="row">                                     
+                                      </div>                    
+                                    </div>
+                                    <button onclick="btnSoDuongNN()"  class="btn btn-success">Số dương nhỏ nhất</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="timSoDuongNN"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="bai5">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> Tìm số chẳn cuối cùng</h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Tìm số chẳn cuối cùng </label>
+                                      <div class="row">                                     
+                                      </div>                    
+                                    </div>
+                                    <button onclick="soChanCuoi()" class="btn btn-success">Số chẳn cuối cùng</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="timSoChan"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="bai6">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> Đổi chổ </h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Đổi chổ </label>
+                                      <div class="row">   
+                                        <input id="first" type="number" class="form-control col-5 ml-3 mr-2" placeholder="Nhập vị trí số 1">                                  
+                                        <input id="second" type="number" class="form-control col-5" placeholder="Nhập vị trí số 2">                                  
+                                      </div>                    
+                                    </div>
+                                    <button onclick="btnDoiCho()" class="btn btn-success">Đổi chổ</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="doiCho"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="bai7">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> Sắp xếp tăng dần</h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Sắp xếp tăng dần </label>
+                                      <div class="row">                                     
+                                      </div>                    
+                                    </div>
+                                    <button onclick="btnSapXep()" class="btn btn-success">Sắp xếp tăng dần</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="sapXepSo"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="bai8">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> Tìm số nguyên tố đầu tiên</h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Tìm số nguyên tố </label>
+                                      <div class="row">                                     
+                                      </div>                    
+                                    </div>
+                                    <button onclick="btnSoNguyenTo()" class="btn btn-success">Tìm số nguyên tố</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="soNguyenTo"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="bai9">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> Đếm số nguyên </h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> Đếm số nguyên </label>
+                                      <div class="row">   
+                                        <input id="themSoNguyen" type="number" class="form-control col-5 ml-3 mr-2" placeholder="Nhập số">   
+                                    </div>                    
+                                </div>
+                                    <button onclick="themSoNguyen()" class="btn btn_add_number mr-2 btn-success">Thêm số</button>
+                                    <button onclick="ketQuaSoNguyen()" class="btn btn-success">Đếm số nguyên</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                <i class="fa-solid fa-hand-holding-heart"></i> <span class="ketQuaThemSoNguyen"></span>                                  
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="demSoNguyen"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="bai10">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <h3> <span><i class="fa-brands fa-wolf-pack-battalion"></i></i></span> So sánh số âm và số dương</h3>
+                                </div>
+                                <div class="card-body card-item">
+                                    <div class="form-group">
+                                      <label for=""><i class="fa-solid fa-star"></i></span> So sánh số âm và số dương</label>
+                                      <div class="row">                                     
+                                      </div>                    
+                                    </div>
+                                    <button onclick="ketQuaSoSanh()" class="btn btn-success">So sánh</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <i class="fa-solid fa-hand-holding-heart"></i> <span class="soSanh"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+  
+
+
+
+
+    
+
+
+
+
+
+
+
+    <!-- JS Main -->
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
