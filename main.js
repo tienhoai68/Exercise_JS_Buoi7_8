@@ -3,7 +3,7 @@ var listNumber = [];
 function getEle(id) {
     return document.getElementById(id);
 }
-
+// Bài 1
 function btnThemSo() {
     var number = getEle("soNguyen").value * 1;
     var result = "Số nhập vào là: ";
@@ -28,6 +28,7 @@ function tinhTong(array) {
 function btnTinhTong() {
     getEle("ketQuaTinhTong").innerHTML = "Kết quả tính tổng là: " + tinhTong(listNumber);
 }
+// Bài 2
 // hàm đếm số dương
 function demSo(arr) {
     var count = "";
@@ -42,7 +43,7 @@ function demSo(arr) {
 function demSoDuong() {
     document.querySelector(".demSoDuong").innerHTML = "tổng số dương nhập vào là: " + demSo(listNumber);
 }
-
+// Bài 3
 // hàm tìm số nhỏ nhất 
 function soNhoNhat(array) {
     var soNhoNhat = array[0];
@@ -55,11 +56,10 @@ function soNhoNhat(array) {
     return soNhoNhat;
 }
 // hàm in ra số nhỏ nhất
-
 function ketQuaSNN() {
     document.querySelector(".soNhoNhat").innerHTML = "Số nhỏ nhất là: " + soNhoNhat(listNumber);
 }
-
+// Bài 4
 // hàm tìm số dương
 function soDuongNN(arr) {
     var soDuong = [];
@@ -76,11 +76,11 @@ function soDuongNN(arr) {
     }
     return soDuongNN;
 }
-
 // hàm in ra kết quả số dương nhỏ nhất
 function btnSoDuongNN() {
     document.querySelector(".timSoDuongNN").innerHTML = "Số dương nhỏ nhất là: " + soDuongNN(listNumber);
 }
+// Bài 5
 // hàm tìm số chẵn cuối cùng
 function soChan(arr) {
     var soChan = [];
@@ -99,6 +99,7 @@ function soChan(arr) {
 function soChanCuoi() {
     document.querySelector(".timSoChan").innerHTML = "Số chẵn cuối là: " + soChan(listNumber);
 }
+// Bài 6
 // hàm hoán đổi 2 giá trị
 function doiChoHaiGiaTri(arr, first, second) {
     if (first < 0 || first >= arr.length || second < 0 || second >= arr.length) {
@@ -116,8 +117,8 @@ function btnDoiCho() {
     var second = getEle("second").value * 1;
     document.querySelector(".doiCho").innerHTML = "Kết quả đổi chổ là: " + doiChoHaiGiaTri(listNumber, first, second);
 }
-// hàm sắp xếp vị trí 
-// hàm in ra kết quả
+// Bài 7
+// hàm in ra kết quả sắp xếp
 function btnSapXep() {
     for (var i = 0; i < listNumber.length - 1; i++) {
         for (var j = i + 1; j < listNumber.length; j++) {
@@ -131,7 +132,7 @@ function btnSapXep() {
 
     document.querySelector(".sapXepSo").innerHTML = "Mảng sau khi sắp xếp: " + listNumber;
 }
-
+// Bài 8
 //hàm tìm số nguyên tố
 function soNguyenTo(arr) {
     var SNT = true;
@@ -158,6 +159,7 @@ function soNguyenToDau(array) {
 function btnSoNguyenTo() {
     document.querySelector(".soNguyenTo").innerHTML = "Số nguyên tố đầu tiên là: " + soNguyenToDau(listNumber);
 }
+//Bài 9
 // hàm thêm số nguyên
 var newListNumber = []; 
 function themSoNguyen() {
@@ -179,6 +181,7 @@ function demSoNguyen(array) {
 function ketQuaSoNguyen() {
     document.querySelector(".demSoNguyen").innerHTML = "Số nguyên là: " + demSoNguyen(newListNumber);
 }
+// Bài 10
 // hàm đếm số âm
 function soAm(arr) {
     var soAm = 0;
