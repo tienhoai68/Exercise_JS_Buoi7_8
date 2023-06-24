@@ -41,7 +41,7 @@ function demSo(arr) {
 }
 // hàm in kết quả đếm số
 function demSoDuong() {
-    document.querySelector(".demSoDuong").innerHTML = "tổng số dương nhập vào là: " + demSo(listNumber);
+    document.querySelector(".demSoDuong").innerHTML = "Tổng số dương nhập vào là: " + demSo(listNumber);
 }
 // Bài 3
 // hàm tìm số nhỏ nhất 
