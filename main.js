@@ -62,19 +62,23 @@ function ketQuaSNN() {
 // Bài 4
 // hàm tìm số dương
 function soDuongNN(arr) {
-    var soDuong = [];
+   var soDuong = [];
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] > 0) {
             soDuong.push(arr[i]);
         }
     }
-    var soDuongNN = soDuong[0];
-    for (var j = 0; j < soDuong.length; j++) {
-        if (soDuongNN > soDuong[j]) {
-            soDuongNN = soDuong[j];
+    var min = Infinity;
+    for (var j = 0 ; j < soDuong.length; j++) {
+        if (soDuong[j] < min && soDuong[j] > 0) {
+            min = soDuong[j];
         }
     }
-    return soDuongNN;
+    if (min === Infinity) {
+        return "Không có số dương";
+    }else {
+        return min;
+    }
 }
 // hàm in ra kết quả số dương nhỏ nhất
 function btnSoDuongNN() {
